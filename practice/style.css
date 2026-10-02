@@ -1,20 +1,19 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.box-cont label {
-    cursor: pointer;
-    display: flex;
-}
-
-.box-cont input[type="checkbox"] {
-    cursor: pointer;
-    opacity: 0.5;
+input[type="checkbox"] {
+    opacity: 0;
     position: absolute;
-    display: none;
+    cursor: pointer;
 }
 
-.box-cont label::before {
+label {
+    display: flex;
+    cursor: pointer;
+}
+
+label::before {
     content: "";
     width: 1em;
     height: 1em;
@@ -22,19 +21,20 @@
     margin-right: 0.5em;
 }
 
-.box-cont label:hover::before {
-    background-color: rgb(10, 212, 10);
+label:hover::before {
+    background-color: rgb(16, 233, 16);
 }
 
-.box-cont input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:hover + label::before {
+    background-color: rgb(16, 233, 16);
+}
+
+
+input[type="checkbox"]:checked + label::before {
     background-color: green;
-    content: "✔";
+    content: "\002714";
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-}
-
-.box-cont input[type="checkbox"]:focus + label::before {
-    box-shadow: 0 0 20px black;
 }

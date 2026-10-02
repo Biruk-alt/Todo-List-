@@ -179,3 +179,11 @@ label:hover::before {
     color: white;
 }
 
+.list i {
+    padding: 5px;
+}
+
+.active-btn {
+    background-color: var(--color-white);
+}
+
