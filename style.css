@@ -187,3 +187,20 @@ label:hover::before {
     background-color: var(--color-white);
 }
 
+
+/* making it responsive */
+@media(max-width: 500px) {
+   .container {
+        width: 300px
+   } 
+
+   .bottom-container button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-platinum);
+}
+
+    .bottom-container {
+        flex-direction: column;
+        gap: 1rem
+    }
+}
